@@ -1,0 +1,32 @@
+{
+    "manifest_version": 3,
+    "name": "Tab Duplicator",
+    "version": "1.0",
+    "description": "Duplicate the current tab with a shortcut key.",
+    "permissions": ["tabs"],
+    "action": {
+      "default_icon": {
+        "16": "icons/icon16.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+      },
+      "default_popup": "popup.html"
+    },
+    "icons": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "commands": {
+      "duplicate-tab": {
+        "suggested_key": {
+          "default": "Alt+Shift+D"
+        },
+        "description": "Duplicate the current tab"
+      }
+    }
+  }
+  
